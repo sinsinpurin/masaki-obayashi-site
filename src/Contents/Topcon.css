@@ -1,0 +1,57 @@
+.topcon{
+    font-family: 'Saira', sans-serif;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+}
+/* じわっと画像が表示される */
+@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
+    0% {opacity: 0} /* 始め */
+    100% {opacity: 1} /* 終わり */
+}
+ 
+/*古いブラウザ用*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+ 
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+    .topcon{
+        margin: 50px 80px 0px 80px;
+        display: flex;
+    }
+    .myname{
+        margin: 70px 0px 0px 0px;
+        font-size: 6vw;
+        line-height: 8vw;
+        color: #222222;
+    }
+    .profession{
+        font-size: 3.5vw;
+        margin-bottom: 30px;
+    }
+    .image1{
+        padding: 30px 30px 30px 60px;
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width:1023px) {
+    /*　for iPad 　*/
+    .myname{
+        text-align: center;
+        font-size: 36px;
+        line-height: 50px;
+        color: #222222;
+        margin-top: 24px;
+    }
+    .profession{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .image1{
+        width: 100%;
+    }
+}

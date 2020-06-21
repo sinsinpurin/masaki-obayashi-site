@@ -1,0 +1,68 @@
+.wantgo{
+    font-family: 'Saira', sans-serif;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+    background-color: antiquewhite;
+}
+/* じわっと画像が表示される */
+@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
+    0% {opacity: 0} /* 始め */
+    100% {opacity: 1} /* 終わり */
+}
+/*古いブラウザ用*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+.wantgo-img{
+    border-radius: 45px;
+}
+
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+    .wantgo{
+        padding: 50px 0px 50px 100px;
+    }
+    .wantgo-img{
+        width: 316px;
+        height: 647px;
+    }
+    .wantgo-text{
+        padding: 0 0 0 100px;
+    }
+    .wantgo-content{
+        display: flex;
+    }
+    .wantgo-title{
+        font-size: 6vw;
+        margin: 20px 0 40px 0;
+    }
+    .wantgo-detail{
+        font-size: 1.5vw;
+    }
+}
+
+@media screen and ( max-width:1023px) {
+    /*　for iPad 　*/
+    .wantgo{
+        padding: 10px 0px 0px 0px;
+    }
+    .wantgo-img{
+        width: 166px;
+        height: 337px;
+    }
+    .wantgo-content{
+        text-align: center;
+    }
+    .wantgo-text{
+        padding: 0 20px 0 20px;
+        text-align: left;
+    }
+    .wantgo-title{
+        font-size: 7vw;
+    }
+    .wantgo-detail{
+        padding: 0 0 10px 0;
+    }
+}

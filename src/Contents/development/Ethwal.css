@@ -1,0 +1,50 @@
+.Ethwal{
+    font-family: 'Saira', sans-serif;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+    background-color: aliceblue;
+}
+/* じわっと画像が表示される */
+@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
+    0% {opacity: 0} /* 始め */
+    100% {opacity: 1} /* 終わり */
+}
+/*古いブラウザ用*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+    .Ethwal{
+        padding: 20px 0 20px 0;
+    }
+    .ethwal-title{
+        font-size: 4vw;
+    }
+    .ethwal-detail{
+        margin: 30px 0 0 0 ;
+        font-size: 1.5vw;
+    }
+    .ethwal-img{
+        width: 100%;
+    }
+}
+
+@media screen and ( max-width:1023px) {
+    /*　for iPad 　*/
+    .Ethwal{
+        padding: 20px 0 20px 0;
+    }
+    .ethwal-title{
+        font-size: 4vw;
+    }
+    .ethwal-detail{
+        margin: 30px 0 0 0 ;
+        font-size: 1.5vw;
+    }
+    .ethwal-img{
+        width: 100%;
+    }
+}

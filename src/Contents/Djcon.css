@@ -1,0 +1,70 @@
+.Djcon{
+    font-family: 'Saira', sans-serif;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+}
+/* じわっと画像が表示される */
+@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
+    0% {opacity: 0} /* 始め */
+    100% {opacity: 1} /* 終わり */
+}
+.mix-loading-spinner{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: 100;
+}
+/*古いブラウザ用*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+    .Djimg1{
+        object-fit: cover;
+        height: 140px;
+        width: 100%;
+    }
+    .Djcon{
+        margin: 30px 200px 0px 200px;
+    }
+    .djmix-title{
+        font-size: 5vw;
+        margin: 0;
+    }
+    .mixlist{
+        list-style-type: none;
+        margin:  0 0 0 0;             /* デフォルト指定上書き */
+        padding: 0;
+    }
+    .djmix-mobile-ver{
+        display: none;
+    }
+}
+
+@media screen and ( max-width:1023px) {
+    /*　for iPad 　*/
+    /* ToDo */
+    .Djimg1{
+        object-fit: cover;
+        height: 140px;
+        width: 100%;
+    }
+    .Djcon{
+        margin: 10px 20px 0px 20px;
+    }
+    .djmix-title{
+        font-size: 7.3vw;
+        margin: 10px 0 0 0 ;
+    }
+    .djmix-desktop-ver{
+        display: none;
+    }
+    .mixlist{
+        list-style-type: none;
+        margin:  0 0 0 0;             /* デフォルト指定上書き */
+        padding: 0;
+    }
+}

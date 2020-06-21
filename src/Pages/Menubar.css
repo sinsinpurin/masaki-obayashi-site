@@ -1,0 +1,31 @@
+.menu {
+    font-family: Saira;
+    text-align: center;
+    line-height: 38px;
+    padding-top: 18px;
+}
+.Mcol{
+    color: #000000;   
+}
+.Mcol:hover{
+    color: #0057FF;
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.7s;
+}
+.col{
+    padding: 0;
+}
+
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+    .menu{
+        font-size: 24px;
+    }
+}
+
+@media screen and ( max-width:1024px) {
+    /*　for iPad 　*/
+    .menu{
+        font-size: 16px;
+    }
+}

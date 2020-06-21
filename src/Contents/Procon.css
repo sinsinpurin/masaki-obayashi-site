@@ -1,0 +1,71 @@
+.procon{
+    font-family: 'Saira', sans-serif;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+}
+/* じわっと画像が表示される */
+@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
+    0% {opacity: 0} /* 始め */
+    100% {opacity: 1} /* 終わり */
+}
+ 
+/*古いブラウザ用*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+    .procon{
+        margin: 80px 80px 0px 80px;
+        display: flex;
+    }
+    .image2{
+        width: 100%;
+    }
+    .profile{
+        margin: 20px 0px 0px 40px;
+    }
+    .text-profile{
+        font-size: 6vw;
+        line-height: 8vw;
+        color: #222222;
+    }
+    .self-introduction{
+        font-size: 1.2vw;
+    }
+    .social-list{
+        display: flex;
+        list-style-type: none;
+        margin:  20px 0 0 0;             /* デフォルト指定上書き */
+        padding: 0;   
+    }
+}
+
+@media screen and ( max-width:1023px) {
+    /*　for iPad 　*/
+    /* ToDo */
+    .procon{
+        margin: 80px 50px 0px 50px;
+    }
+    .text-profile{
+        font-size: 6vw;
+        line-height: 8vw;
+        color: #222222;
+    }
+    .self-introduction{
+        font-size: 3vw;
+    }
+    .social-list{
+        display: flex;
+        list-style-type: none;
+        margin: 40px 0 0 0;             /* デフォルト指定上書き */
+        padding: 0;   
+    }
+    .image2{
+        text-align: center;
+        width: 100%;
+        /* display: none; */
+    }
+}

@@ -1,0 +1,41 @@
+.Devcon{
+    font-family: 'Saira', sans-serif;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+}
+/* じわっと画像が表示される */
+@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
+    0% {opacity: 0} /* 始め */
+    100% {opacity: 1} /* 終わり */
+}
+/*古いブラウザ用*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+.dev-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+    .develop-text{
+        font-size: 6vw;
+        margin: 0 0 0 0 ;
+    }
+    .Devcon{
+        margin: 0px 150px 0px 150px;
+    }
+}
+
+@media screen and ( max-width:1023px) {
+    /*　for iPad 　*/
+    .Devcon{
+        margin: 0px 20px 0px 20px;
+    }
+    .develop-text{
+        font-size: 5vw;
+    }
+}

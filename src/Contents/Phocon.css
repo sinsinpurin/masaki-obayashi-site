@@ -1,0 +1,44 @@
+.Phocon{
+    font-family: 'Saira', sans-serif;
+    animation: fadeIn 1.5s ease 0s 1 normal;
+    -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
+}
+/* じわっと画像が表示される */
+@keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
+    0% {opacity: 0} /* 始め */
+    100% {opacity: 1} /* 終わり */
+}
+/*古いブラウザ用*/
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@media screen and (min-width:1024px) {
+    /*　for PC　*/
+    .Phocon{
+        margin: 30px 200px 0px 200px;
+    }
+    .phocon-title{
+        font-size: 5vw;
+    }
+    .phocon-detail{
+        font-size: 2vw;
+        margin-top: 30px;
+    }
+}
+
+@media screen and ( max-width:1023px) {
+    /*　for iPad 　*/
+    .Phocon{
+        margin: 10px 20px 0px 20px;
+    }
+    .phocon-title{
+        font-size: 7.3vw;
+        margin: 10px 0 0 0 ;
+    }
+    .phocon-detail{
+        font-size: 3vw;
+        margin-top: 10px;
+    }
+}
