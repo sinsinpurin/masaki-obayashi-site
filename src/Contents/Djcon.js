@@ -53,9 +53,9 @@ class Djcon extends React.Component {
                             <li>
                                 <iframe width="100%" height="200" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FTDU_DJ%2Ffrenzynet-podcast-56-by-mk1%2F" frameBorder="0" title="podcast56" onLoad={this.hideSpinner}></iframe>
                             </li>
-                            <li>
+                            {/* <li>
                                 <iframe width="100%" height="200" src="https://www.mixcloud.com/widget/follow/?u=%2FMK1_%2F&hide_followers=1" frameBorder="0" title="mymixcloud" onLoad={this.hideSpinner}></iframe>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                     <div className="djmix-mobile-ver">
@@ -70,11 +70,11 @@ class Djcon extends React.Component {
                                 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FTDU_DJ%2Ffrenzynet-podcast-51-by-mk1%2F" frameBorder="0" title="frenzy#51" onLoad={this.hideSpinner}></iframe>
                             </li>
                             <li>
-                                <iframe width="100%" height="200" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FTDU_DJ%2Ffrenzynet-podcast-56-by-mk1%2F" frameBorder="0" title="podcast56" onLoad={this.hideSpinner}></iframe>
+                                <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&light=1&feed=%2FTDU_DJ%2Ffrenzynet-podcast-56-by-mk1%2F" frameBorder="0" title="podcast56" onLoad={this.hideSpinner}></iframe>
                             </li>
-                            <li>
+                            {/* <li>
                                 <iframe width="100%" height="120" src="https://www.mixcloud.com/widget/follow/?u=%2FMK1_%2F&hide_followers=1" frameBorder="0" title="mymixcloud" onLoad={this.hideSpinner}></iframe>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
                 </div>
