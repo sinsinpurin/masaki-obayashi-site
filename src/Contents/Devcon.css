@@ -22,11 +22,15 @@
 @media screen and (min-width:1024px) {
     /*　for PC　*/
     .develop-text{
-        font-size: 6vw;
+        font-size: 52px;
         margin: 0 0 0 0 ;
     }
-    .Devcon{
+    /* .Devcon{
         margin: 0px 150px 0px 150px;
+    } */
+    .Devcon{
+        max-width: 1200px;
+        margin: 0 auto;
     }
 }
 

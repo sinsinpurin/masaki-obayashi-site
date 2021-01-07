@@ -3,6 +3,7 @@
     animation: fadeIn 1.5s ease 0s 1 normal;
     -webkit-animation: fadeIn 1.5s ease 0s 1 normal;
     background-color: antiquewhite;
+    border-radius: 30px;
 }
 /* じわっと画像が表示される */
 @keyframes fadeIn { /*上のbody内で呼び出しているアニメーションと名前をそろえる*/
@@ -16,30 +17,36 @@
 }
 
 .wantgo-img{
-    border-radius: 45px;
+    border-radius: 25px;
+}
+
+.list-content{
+    list-style: none;
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (min-width:1024px) {
     /*　for PC　*/
     .wantgo{
-        padding: 50px 0px 50px 100px;
+        padding: 20px 0px 20px 20px;
     }
     .wantgo-img{
-        width: 316px;
-        height: 647px;
+        height: 350px;
     }
     .wantgo-text{
-        padding: 0 0 0 100px;
+        margin-top: 15px;
     }
     .wantgo-content{
-        display: flex;
     }
     .wantgo-title{
-        font-size: 6vw;
-        margin: 20px 0 40px 0;
+        font-size: 40px;
+        margin: 0;
+        margin-left: 150px;
     }
     .wantgo-detail{
-        font-size: 1.5vw;
+        font-size: 16px;
+        margin-left: 150px;
     }
 }
 
@@ -49,20 +56,25 @@
         padding: 10px 0px 0px 0px;
     }
     .wantgo-img{
-        width: 166px;
-        height: 337px;
+        width: 130px;
+    }
+    .wantgo-sub-detail{
+        display: none;
+    }
+    .list-content{
+        padding-left: 20px;
     }
     .wantgo-content{
-        text-align: center;
     }
     .wantgo-text{
-        padding: 0 20px 0 20px;
+        padding: 35px 10px 0 10px;
         text-align: left;
     }
     .wantgo-title{
-        font-size: 7vw;
+        font-size: 30px;
     }
     .wantgo-detail{
+        font-size: 13px;
         padding: 0 0 10px 0;
     }
 }
