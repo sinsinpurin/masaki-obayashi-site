@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/masaki-obayashi-site/precache-manifest.3cfe28f16982b1248d89e02a31b6e140.js"
+  "/masaki-obayashi-site/precache-manifest.b225a29aba7a2176359542f313191ac0.js"
 );
 
 self.addEventListener('message', (event) => {
